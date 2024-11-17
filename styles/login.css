@@ -1,0 +1,126 @@
+/* LOGIN */
+
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.formulario {
+    background-color: #fff;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.formulario h1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+    font-size: 30px;
+}
+
+.formulario .contenedor-parte-principal-login {
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: 50% auto; */
+    /* margin-bottom: 10px; */
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form .imagen input {
+    display: none;
+}
+
+.formulario form .imagen:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.formulario form .imagen label {
+    cursor: pointer;
+    user-select: none;
+    /* justify-content: center; */
+}
+
+.formulario form .imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.usuario-contrasenia {
+    display: grid;
+    justify-content: center;
+}
+
+.usuario-contrasenia input {
+    width: 80%;
+    height: 30px;
+    background-color: #D9D9D9;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.formulario .contenedor-parte-inferior {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenedor-parte-inferior input {
+    width: 475px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 10px 0 10px 0;
+    padding: 3px;
+}
+
+.contenedor-envio {
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor-envio input {
+    width: 100px;
+    height: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.contenedor-envio input:hover {
+    cursor: pointer;
+}
+
+.contenedor-envio a {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-a a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor-a a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+

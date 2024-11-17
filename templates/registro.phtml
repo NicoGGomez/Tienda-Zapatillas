@@ -1,0 +1,62 @@
+    <?php require('header.phtml') ?>
+
+    <div class="fondo">
+
+                <div class="contenedor-form">
+
+                        <!-- seccion del formulario -->
+
+                        <section class="formulario">
+
+                            <h1>Registro</h1>
+
+                            <form action="registroUsuario" method="POST">
+                                
+                                <div class="contenedor-parte-principal">
+                                    <div class="contenedor-imagen">
+                                        <div class="imagen">
+                                            <label for="input-subir-archivo">Ingrese foto de perfil</label>
+                                            <input type="file" name="img" id="input-subir-archivo">
+                                        </div>
+                                    </div>
+    
+                                    <div class="usuario-contrasenia">
+                                        <label for="">Nombre Usuario</label>
+                                        <input type="text" name="usr" required>
+    
+                                        <label for="">Contraseña</label>
+                                        <input type="password" name="pass" id="" required>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor-parte-inferior">
+                                    <label for="">Mail</label>
+                                    <input type="email" name="mail" id="" required>
+                                </div>
+
+                                <div class="contenedor-envio">
+                                    <input type="submit" value="enviar">
+                                </div>
+
+                            </form>
+
+                            <div class="contenedor-a">
+                                <a href="login">Ya estoy registrado</a>
+                            </div>
+
+                        </section>
+
+            </div>
+
+            <?php if ($error): ?>
+                    <div class="container-error">
+                    <div class="error">
+                        <?= $error ?>
+                    </div>
+                    </div>
+            <?php endif ?>  
+
+    </div>
+
+</body>
+</html>
