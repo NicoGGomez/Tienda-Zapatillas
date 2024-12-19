@@ -14,12 +14,24 @@ class authHelper {
         $_SESSION['USER_PASS'] = $user->contraseña;   
     }
 
+    public static function logout() {
+        AuthHelper::init();
+        session_destroy();
+    }
+
     public static function verify(){
         authHelper::init();
         if(!isset($_SESSION['USER_USER'])){
-            header('header'. BASE_URL . 'producto');
+            header('location: '. BASE_URL);
             die();
         }
+    }
+
+    public static function usuarioIniciado(){
+        if(session_status() === PHP_SESSION_NONE){
+            return false;
+        }
+        return true;
     }
 
 }

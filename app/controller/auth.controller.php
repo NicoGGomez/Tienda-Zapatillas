@@ -17,8 +17,18 @@ class authController {
         $this->view->showLogin();
     }
 
+    public function showLogout(){
+        AuthHelper::logout();
+        $this->view->showLogout();
+        // header('Location: ' . BASE_URL);  
+    }
+
     function showRegister(){
         $this->view->showRegister();
+    }
+
+    function showPerfil(){
+        $this->view->showPerfil();
     }
 
     function nuevoUsuario(){
@@ -63,8 +73,10 @@ class authController {
 
         if ($user->contraseña === $password) {
             authHelper::login($user);
-            $this->view->showHome();
+            $userLogued = true;
+            $this->view->showHome($userLogued);
         } else {
+            $userLogued = false;
             $this->view->showLogin('usuario invalido');
         }
 

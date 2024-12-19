@@ -10,20 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css?v=1.1">
     
 </head>
 <body>
     
-    <div class="fondo">
         <header class="nav">
 
             <nav>
                 <ul>
                     <li><a href="home">Home</a></li>
                     <li><a href="producto">Producto</a></li>
-                    <!-- <li><a href="register">Logout</a></li> -->
-                    <li><a href="login">Login</a></li>
+                        <?php if($userLogued){ ?>
+                            <li><a href="perfil">Perfil</a></li>
+                        <?php } else { ?>
+                            <li><a href="login">Iniciar Sesion</a></li>
+                        <?php } ?>
                 </ul>
             </nav>
     

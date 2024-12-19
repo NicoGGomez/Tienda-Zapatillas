@@ -21,6 +21,11 @@ switch($params[0]){
         $authController->showLogin();
         break;
 
+    case 'logout':
+        $authController = new authController();
+        $authController -> showLogout();
+        break;
+
     case 'loginUsuario':
         $authController = new authController();
         $authController->auth();
@@ -34,6 +39,11 @@ switch($params[0]){
     case 'registroUsuario': 
         $authController = new authController();
         $authController->nuevoUsuario();
+        break;
+
+    case 'perfil':
+        $authController = new authController();
+        $authController->showPerfil();
         break;
 
     case 'home':

@@ -25,7 +25,7 @@
 .contenedor-general-categoria {
     background-color: #D9D9D9;
     padding: 20px;
-    display: contains;
+    /* display: contains; */
     justify-content: center;
     border-radius: 20px;
 }

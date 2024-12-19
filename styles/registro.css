@@ -103,6 +103,24 @@
     cursor: pointer;
 }
 
+.btn-enviar {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: .1s;
+}
+
+.btn-enviar:hover {
+    transition: .1s;
+    box-shadow: 5px 5px 0px 0px rgb(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+}
+
 .contenedor-envio a {
     display: flex;
     justify-content: center;

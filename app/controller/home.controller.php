@@ -13,7 +13,8 @@ class homeController {
     }
 
     function showHome(){
-        $this->view->showHome();
+        $login = authHelper::usuarioIniciado();
+        $this->view->showHome($login);
     }
 
 
