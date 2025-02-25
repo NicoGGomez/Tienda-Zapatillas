@@ -7,10 +7,12 @@ require 'app/helper/auth.helper.php';
 class authController {
     private $view;
     private $model;
+    private $helper;
 
     function __construct(){
         $this->view = new authView();
         $this->model = new authModel();
+        $this->helper = new AuthHelper();
     }
 
     function showLogin(){
@@ -73,10 +75,7 @@ class authController {
 
         if ($user->contraseña === $password) {
             authHelper::login($user);
-            $userLogued = true;
-            $this->view->showHome($userLogued);
         } else {
-            $userLogued = false;
             $this->view->showLogin('usuario invalido');
         }
 

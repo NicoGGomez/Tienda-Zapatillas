@@ -2,9 +2,8 @@
 
 class homeView {
     
-    function showHome($log){
+    function showHome(){
         $name = 'home';
-        $login = $log;
         require_once 'templates/home.phtml';
     }
 

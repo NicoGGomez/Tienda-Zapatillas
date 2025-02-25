@@ -20,13 +20,12 @@ class authView {
     }
 
     function showPerfil(){
-        $login = true;
+        $name = 'perfil';
         require 'templates/perfil.phtml';
     }
 
-    function showHome($userLogued){
+    function showHome(){
         $name ='home';
-        $login = $userLogued;
         require 'templates/home.phtml';
     }
 

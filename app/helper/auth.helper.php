@@ -1,37 +1,37 @@
 <?php 
 
-class authHelper {
+class AuthHelper {
 
-    public static function init(){
-        if(!isset($_SESSION)){
+    public static function init() {
+        if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
     }
+    
 
     public static function login($user){
-        authHelper::init();
-        $_SESSION['USER_USER'] = $user->nombre;
-        $_SESSION['USER_PASS'] = $user->contraseña;   
+        // self::init();
+        // session_regenerate_id(true);  // Previene ataques de secuestro de sesión
+        // $_SESSION['USER_NAME'] = $user->nombre;
+        self::init();
+        $_SESSION['USER_NAME'] = $user->nombre; // Guarda los datos del usuario
+        $_SESSION['USER_ID'] = $user->id_usuario;  // Identificador único
+        var_dump($_SESSION); // Verifica que la sesión tiene datos antes de redirigir
+        header('Location: ' . BASE_URL);
+        exit(); 
     }
 
     public static function logout() {
-        AuthHelper::init();
-        session_destroy();
+        self::init();
+        session_unset();  // Limpia todas las variables de sesión
+        session_destroy();  // Destruye la sesión
     }
 
     public static function verify(){
-        authHelper::init();
-        if(!isset($_SESSION['USER_USER'])){
-            header('location: '. BASE_URL);
-            die();
+        self::init();
+        if (!isset($_SESSION['USER_NAME'])) {
+            header('Location: ' . BASE_URL);
+            exit();
         }
     }
-
-    public static function usuarioIniciado(){
-        if(session_status() === PHP_SESSION_NONE){
-            return false;
-        }
-        return true;
-    }
-
 }

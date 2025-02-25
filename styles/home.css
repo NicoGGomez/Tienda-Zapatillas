@@ -48,6 +48,13 @@
     transition: .1s;
 }
 
+.contenedor-img .img{
+    background-image: url(../imgs/jordan.png);
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
 .contenedor-img:hover {
     transition: .1s;
     box-shadow: 5px 5px 0px 0px rgb(0, 0, 0, 0.5);
