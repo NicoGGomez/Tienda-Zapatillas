@@ -6,7 +6,7 @@
 
 .contenedor-titulo h1 {
     /* background-color: #fff; */
-    color: #fff;
+    color: #ffffff;
     display: flex;
     width: 200px;
     padding-top: 10px;
@@ -25,7 +25,7 @@
 .contenedor-general-categoria {
     background-color: #D9D9D9;
     padding: 20px;
-    /* display: contains; */
+    width: fit-content;
     justify-content: center;
     border-radius: 20px;
 }
@@ -40,20 +40,13 @@
 }
 
 .contenedor-img {
-    width: 300px;
-    height: 300px;
+    width: fit-content;
     overflow: hidden;
     margin: 20px;
     border-radius: 20px;
     transition: .1s;
 }
 
-.contenedor-img .img{
-    background-image: url(../imgs/jordan.png);
-    background-size: cover;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-}
 
 .contenedor-img:hover {
     transition: .1s;
@@ -61,7 +54,8 @@
 }
 
 img {
-    width: 100%;
+    /* width: 100%; */
+    width: fit-content;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }

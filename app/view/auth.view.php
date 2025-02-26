@@ -4,13 +4,11 @@ class authView {
 
     function showLogin($error=null){
         $name = 'login';
-        $login = false;
         require 'templates/login.phtml';
     }
 
     function showLogout($error=null){
-        $mensaje = $error;
-        $login = false;
+        $name = 'login';
         require 'templates/login.phtml';
     }
 

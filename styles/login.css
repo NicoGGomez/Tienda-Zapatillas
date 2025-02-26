@@ -1,27 +1,94 @@
 /* LOGIN */
 
+.fondo {
+    overflow: hidden;
+}
+
+/* TITULO */
+
+h1 {
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+/* FORM */
+
 .formulario-login {
     width: 30%;
-    height: 60%;
+    height: 70%;
     padding: 20px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .formulario-login form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
-.contenedor-parte-principal-login .usuario-contrasenia {
-    display: grid;
-    justify-items: center;
+.formulario-login .contenedor-parte-principal-login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario-login .contenedor-parte-principal-login .usuario-contrasenia {
     margin-top: 20px;
+    display: grid;
+    width: 80%;
 }
 
+/* LABELS */
+
+label {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* INPUTS */
+
+.formulario-login .usuario-contrasenia input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+}
+
+form .contenedor-envio input {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    transition: .1s;
+}
+
+form .contenedor-envio input:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: .1s;
+    box-shadow: 5px 5px 0px 0px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* MOVERSE A REGISTRO */
+
+.contenedor-a a {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .1s;
+}

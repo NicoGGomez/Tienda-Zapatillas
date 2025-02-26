@@ -1,4 +1,4 @@
-/* LOGIN */
+/* REGISTRO */
 
 .contenedor-form {
     display: flex;
@@ -11,15 +11,18 @@
 .formulario {
     background-color: #fff;
     width: 600px;
-    height: 500px;
+    height: 70%;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 
 .formulario h1 {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0 30px 0;
-    font-size: 30px;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    user-select: none;
 }
 
 .formulario .contenedor-parte-principal {
@@ -63,13 +66,14 @@
 }
 
 .usuario-contrasenia input {
-    width: 80%;
-    height: 30px;
     background-color: #D9D9D9;
     border: none;
     border-bottom: 1px solid #000;
     margin-bottom: 10px;
     padding: 3px;
+    height: 50px;
+    width: 80%;
+    font-size: 18px;
 }
 
 .formulario .contenedor-parte-inferior {
@@ -80,11 +84,12 @@
 
 .contenedor-parte-inferior input {
     width: 475px;
-    height: 30px;
+    height: 50px;
     background-color: #D9D9D9;
+    font-size: 18px;
     border: none;
     border-bottom: 1px solid #000;
-    margin: 10px 0 10px 0;
+    margin: 7px 0 10px 0;
     padding: 3px;
 }
 
