@@ -8,14 +8,11 @@ class AuthHelper {
         }
     }
     
-
     public static function login($user){
-        // self::init();
-        // session_regenerate_id(true);  // Previene ataques de secuestro de sesión
-        // $_SESSION['USER_NAME'] = $user->nombre;
         self::init();
         $_SESSION['USER_NAME'] = $user->nombre; // Guarda los datos del usuario
         $_SESSION['USER_ID'] = $user->id_usuario;  // Identificador único
+        $_SESSION['USER_MAIL'] = $user->mail;
         var_dump($_SESSION); // Verifica que la sesión tiene datos antes de redirigir
         header('Location: ' . BASE_URL);
         exit(); 

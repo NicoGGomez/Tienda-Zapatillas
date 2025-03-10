@@ -1,4 +1,5 @@
     <?php require_once 'templates/header.phtml' ?>
+
     
     <div class="fondo">
 
@@ -12,7 +13,12 @@
             </div>
             <div class="info">
                 <h2><?= htmlspecialchars($_SESSION['USER_NAME']) ?></h2>
-                <p>mail</p>
+                <?php if(!isset($_SESSION['USER_MAIL'])){?>
+                <p><?= htmlspecialchars($mail) ?></p>
+                <?php } else { ?>
+                <p><?= htmlspecialchars('mail') ?></p>
+                <?php } ?>
+
             </div>
         </div>
 

@@ -23,4 +23,11 @@ class authModel {
         return $this->db->lastInsertId();
     }
 
+    function devolverMail($userId){
+        $query = $this->db->prepare('SELECT mail FROM usuario WHERE id_usuario = ?');
+        $query->execute([$userId]);
+
+        return $query->fetchColumn(); // Retorna solo el email
+    }
+
 }

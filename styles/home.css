@@ -5,7 +5,6 @@
 }
 
 .contenedor-titulo h1 {
-    /* background-color: #fff; */
     color: #ffffff;
     display: flex;
     width: 200px;
@@ -15,7 +14,7 @@
 }
 
 .contenedor-general {
-    width: 100%;
+    width: fit-content;
     height: 80%;
     display: flex;
     justify-content: center;
@@ -54,8 +53,8 @@
 }
 
 img {
-    /* width: 100%; */
-    width: fit-content;
+    aspect-ratio: 1/1;
+    width: 350px;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }

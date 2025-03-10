@@ -12,8 +12,9 @@
     background-color: #D9D9D9;
     border-radius: 20px;
     width: 90%;
-    height: 80%;
+    height: 90vh;
     justify-content: center;
+    align-items: center;
 }
 
 .contenedor-producto .titulo {
@@ -41,7 +42,6 @@
 .contenedor-separador .contenedor-imagen {
     width: 100%;
     height: 100%;
-    /* background-image: url(../imgs/jordan.png); */
     background-image: url(https://imgs.search.brave.com/xUhJbSiO6Z5GUyyKnaZVYjgMjXoTwtUl-4jXXiLPgkE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuY2hvbGxvbWV0/cm8uY29tL3RocmVh/ZHMvcmF3LzBnbGgy/LzE0Nzc1NDJfMS9y/ZS83Njh4NzY4L3F0/LzYwLzE0Nzc1NDJf/MS5qcGc);
     background-size: cover;
     border-bottom-left-radius: 20px;
