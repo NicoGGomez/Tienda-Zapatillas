@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-11-2024 a las 14:55:13
+-- Tiempo de generación: 02-04-2025 a las 03:28:29
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -66,8 +66,26 @@ CREATE TABLE `usuario` (
   `nombre` varchar(100) NOT NULL,
   `mail` varchar(100) NOT NULL,
   `contraseña` varchar(50) NOT NULL,
-  `imagen_usuario` varchar(100) NOT NULL
+  `imagen_usuario` varchar(100) NOT NULL,
+  `rol` varchar(20) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `nombre`, `mail`, `contraseña`, `imagen_usuario`, `rol`) VALUES
+(1, 'webadmin', 'anelecarg@icloud.com', 'admin', 'XJkpfphX.jpg', 'admin'),
+(3, 'webadmin', 'anelecarg@icloud.com', 'admin', '', ''),
+(4, 'webadmin', 'anelecarg@icloud.com', 'admin', '', ''),
+(5, 'webadmin', 'anelecarg@icloud.com', 'admin', '', ''),
+(6, 'brandon', 'anele@gmail.com', '1234', '', ''),
+(7, 'francisco', 'frandagos@gmail.com', 'pija1', '', ''),
+(8, 'fran', 'leiva@gmail.com', 'pija', '', ''),
+(9, 'agus', 'fennema@gmail.com', 'dasdasd', '', ''),
+(10, 'agustina', 'anelecarg@icloud.com', 'agus', '', ''),
+(11, 'nicolas', 'anelecarg@icloud.com', '2002', '', ''),
+(12, 'NegroLeiba', 'brando@mdfksa.mail', '1234', '', '');
 
 --
 -- Índices para tablas volcadas
@@ -112,7 +130,7 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Restricciones para tablas volcadas
